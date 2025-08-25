@@ -9,7 +9,7 @@ params:
   blog: true
   prompt:
     core:
-      text: "fadi@internet"
+      text: "fadi@online"
       color: "pink"
       before: "["
       beforeColor: "red"
@@ -22,7 +22,7 @@ params:
     path:
       before: "["
       beforeColor: "red"
-      text: "~/terminalcv"
+      text: "~/internet"
       color: "blue"
       after: '\]'
       afterColor: "red"
@@ -113,12 +113,12 @@ params:
     # settings:
     #   useLess: true
     details:
-      - jobTitle: Job With Red Title
+      - jobTitle: System Administrator
         color: red
         company: "-"
-        location: somewhere
-        date: August 2010 - Present
-        description: Some description about this red title job
+        location: Leibniz University Hanover, Germany
+        date: August 2014 - Present
+        description: System Administrator in the eLearning Service Abteilung (elsa)
 
       - jobTitle: Job with purple title
         color: purple
@@ -135,13 +135,19 @@ params:
 
   education:
     details:
-      - courseName: Red Color training
+      - courseName: B.Sc in Computer Science, Leibniz University Hanover, Germany
         color: red
-        date: June 2019 - July 2019
-        description: Descrption about red color trianing
+        date: 2008 - 2013
+        description: Thesis - „Implementing and Evaluating Congestion Control
+          Algorithm in Car-Adhoc-Networks“
 
-      - courseName: Default color training
-        date: Sept 2004 - Jun 2008
+      - courseName: student assistant in the eLearning Service Abteilung (elsa),
+          Leibniz University Hanover
+        
+          Linux Server/Network Administrator
+          Software development for web based Systems - Stud.IP, ILIAS
+          and testMaker (Mobile App, Plugins and Core System)
+        date: May 2009 - May 2014
         #description: There is no need for description
 
   skills:
