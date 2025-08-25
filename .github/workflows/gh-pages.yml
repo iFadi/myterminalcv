@@ -1,5 +1,4 @@
 name: Deploy Hugo site to Pages
-
 on:
   push:
     branches: ["main"]
@@ -7,11 +6,15 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true    # fetches the theme if it’s a submodule
+          submodules: true      # fetch theme if added as a submodule
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -26,5 +29,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
           publish_dir: ./public
+          publish_branch: gh-pages
