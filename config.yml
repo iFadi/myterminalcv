@@ -23,7 +23,7 @@ params:
       before: "["
       beforeColor: "red"
       text: "~/internet"
-      color: "blue"
+      color: "green"
       after: '\]'
       afterColor: "red"
     extra:
@@ -120,18 +120,12 @@ params:
         date: August 2014 - Present
         description: System Administrator in the eLearning Service Abteilung (elsa)
 
-      - jobTitle: Job with purple title
+      - jobTitle: Free Lance Developer
         color: purple
         company: "-"
-        location: somewhere elese
-        date: July 2000  - July 2010
-        description: Some description about this purple job
-
-      - jobTitle: Job with default color title
-        company: "-"
-        location: anywhere
-        date: July 2008 - 2010
-        description: Description about this default color job
+        location: Jerusalem
+        description: Free lance web developer and system administrator
+        date: Since 2014
 
   education:
     details:
@@ -186,13 +180,22 @@ params:
     #   useLess: true
     details:
       - name: English
-        color: Blue
-        percentage: 50
+        #color: Blue
+        percentage: 100
         #description:
 
-      - name: Gibberish
+      - name: German
         percentage: 100
-        description: pasghettipigglywiggly
+        #description: pasghettipigglywiggly
+
+      - name: Arabic
+        percentage: 100
+
+      - name: Russian
+        percentage: 30
+
+      - name: Hebrew
+        percentage: 50
 
   projects:
     # settings:
